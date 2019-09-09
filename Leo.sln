@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leo.DAL", "Leo.DAL\Leo.DAL.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leo.DTO", "Leo.DTO\Leo.DTO.csproj", "{5AC772A6-D685-4664-B69D-5645E8C1F8D1}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Leo.DB", "Leo.DB\Leo.DB.sqlproj", "{B7C70C83-6503-4B4A-B6FB-42B10938E2BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{5AC772A6-D685-4664-B69D-5645E8C1F8D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AC772A6-D685-4664-B69D-5645E8C1F8D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AC772A6-D685-4664-B69D-5645E8C1F8D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C70C83-6503-4B4A-B6FB-42B10938E2BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C70C83-6503-4B4A-B6FB-42B10938E2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C70C83-6503-4B4A-B6FB-42B10938E2BB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B7C70C83-6503-4B4A-B6FB-42B10938E2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C70C83-6503-4B4A-B6FB-42B10938E2BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C70C83-6503-4B4A-B6FB-42B10938E2BB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
