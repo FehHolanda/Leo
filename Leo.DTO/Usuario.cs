@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leo.DAL
+namespace Leo.DTO
 {
-	class Usuarios
+	public class Usuario
 	{
         public int Id { get; set; }
         public string nome { get; set; }

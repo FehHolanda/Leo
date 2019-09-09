@@ -1,9 +1,8 @@
 ﻿CREATE TABLE [dbo].[Usuarios]
 (
-	[IdUsuario] INT NOT NULL PRIMARY KEY identity, 
-    [IdLogin] INT NOT NULL, 
-    [IdPerfil] INT NOT NULL, 
+	[Id] INT NOT NULL PRIMARY KEY identity,  
     [Nome] NVARCHAR(50) NOT NULL, 
-    [EhAtivo] BIT NOT NULL, 
-    [DataCadastro] DATETIME NOT NULL,
+	[Email] VARCHAR(20) NOT NULL, 
+    [Senha] VARCHAR(20) NOT NULL, 
+
 )
