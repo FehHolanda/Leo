@@ -11,7 +11,7 @@ namespace Leo.DAL
         {
             try
             {
-                string conString = ConfigurationManager.ConnectionStrings["conexaoClienteSQLServer"].ConnectionString;
+                string conString = ConfigurationManager.ConnectionStrings["conexaoSQLServer"].ConnectionString;
                 SqlConnection connection = new SqlConnection(conString);
                 connection.Open();
                 return connection;

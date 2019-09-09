@@ -13,7 +13,7 @@ namespace Leo.BLL
         {
             try
             {
-                string sql = "SELECT Id,Nome,Email,Senha FROM Clientes WHERE Id = " + id;
+                string sql = "SELECT Id,Nome,Email,Senha FROM User WHERE Id = " + id;
                 DataTable tabela = new DataTable();
                 tabela = AcessoDB.GetDataTable(sql);
                 return GetUsuario(tabela);
@@ -131,16 +131,17 @@ namespace Leo.BLL
             string sql = "";
             try
             {
-                string[] parametrosNomes = new string[6];
+                string[] parametrosNomes = new string[3];
                 parametrosNomes[0] = "@Nome";
-                parametrosNomes[3] = "@Email";
-                parametrosNomes[4] = "@Senha";
-                string[] parametrosValores = new string[6];
-                parametrosValores[0] = oCliente.nome;
-                //
-                parametrosValores[3] = oCliente.email;
-                parametrosValores[4] = oCliente.senha;
-                sql = "INSERT INTO Usuario(Nome,Email,Senha) values (@Nome,@Email,@Senha)";
+                parametrosNomes[1] = "@Email";
+                parametrosNomes[2] = "@Senha";
+
+                string[] parametrosValores = new string[3];
+                parametrosValores[0] = oCliente.nome;             
+                parametrosValores[1] = oCliente.email;
+                parametrosValores[2] = oCliente.senha;
+                sql = "INSERT INTO Usuarios(Nome,Email,Senha) values (@Nome,@Email,@Senha)";
+
                 AcessoDB.CRUD(sql, parametrosNomes, parametrosValores);
             }
             catch (Exception ex)

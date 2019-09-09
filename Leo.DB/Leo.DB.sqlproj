@@ -65,4 +65,7 @@
   <ItemGroup>
     <RefactorLog Include="Leo.DB.refactorlog" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Leo.DB.publish.xml" />
+  </ItemGroup>
 </Project>
